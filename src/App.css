@@ -1,42 +1,73 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+div{
+  display: flex;
+  width: 100%;
+  height:100%;
+  color:beige;
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.styled-heading {
+  
+  font-family: "Arial", sans-serif; /* Adjust font family */
+  font-size: 2.5rem; /* Adjust font size */
+  font-weight: 300; /* Light weight for the main text */
+  text-align: center; /* Center-align the text */
+  color: white; /* Default text color */
+  line-height: 1.4; /* Adjust line spacing */
+  margin: 0; /* Remove default margins */
+  width: 100%;
+  margin-top: 15%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.styled-heading .highlight {
+  color: #f5a623; /* Highlight color for "achieve" */
+  font-weight: 500; /* Slightly bolder weight for emphasis */
 }
 
-.card {
-  padding: 2em;
+.styled-heading span {
+  display: inline-block; /* Keeps each line cohesive */
 }
 
-.read-the-docs {
-  color: #888;
+.header-right {
+
+
+  position: absolute; /* Keep the div positioned on the page */
+  top: 10%; /* Adjust distance from the top of the page */
+  right: -75%; /* Adjust horizontal distance from the right */
+  text-align: left; /* Align text to the right */
+  height:15%;
+
+
+
+}
+
+.header-right span {
+  display: inline-block; /* Forces the container to share one box */
+}
+
+.header-right .name {
+  font-size: 24px; /* Font size for the name */
+  font-weight: bold; /* Bold weight for emphasis */
+  color: white; /* White text for contrast */
+  height:30%;
+
+}
+
+.header-right .role {
+  font-size: 18px; /* Slightly smaller font size for the role */
+  font-weight: normal; /* Normal weight for differentiation */
+  color: white; /* Light gray for a subtle effect */
+  margin-top: 5%;
+  height:30%;
+  margin-left: 0%;
+
+
+
+
+}
+
+.home-page{
+  width:100%;
+  height: 100vh; /* Full height of the viewport */
+  margin-top: 6%;
 }
