@@ -58,9 +58,10 @@ width: 100%; /* Full underline on hover */
 width: 100%; /* Keeps underline on the active link */
 }
 
-.mainNav ul a.active {
-color: #ffd700; /* Optional: Color change for active link */
-}
+.mainNav ul .active {
+    color: #ffd700; /* Yellow color for the active link */
+    font-weight: bold; /* Optional: Make it bold */
+  }
 
 .cube-link span{
     display:flex;

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.main-body{
+    width: 50%;
+    height: 75%;
+    margin-top: 5%; /* Push the main body below the navbar */
+
+}
+
+.left-plans-description {
+        display: flex;
+        margin-left: 23%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center align the text */
+        color: white; /* White text color */
+    }
+
+
+
+.regular-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    height: 25%;
+  }
+
+/* Yellow text styles */
+.regular-text-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: space-evenly;
+    font-size: 1.2rem;
+    color: #ffd700; /* Yellow color for text */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    line-height: 1.6;
+    margin-bottom: 20%;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space below the quote */
+    font-style: italic;
+    line-height: 1.6; /* Add line spacing */
+  }
+
+  .left-plans-description h1 {
+    font-size: 4rem; /* Adjust font size as needed */
+    font-weight: bold;
+    font-weight: 200; /* Bold weight */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Poppins', 'sans-serif' !important; /* Apply the new font */
+    padding: 5%;
+  }
