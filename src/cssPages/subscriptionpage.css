@@ -1,55 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-.main-body{
-    width: 50%;
-    height: 75%;
-    margin-top: 5%; /* Push the main body below the navbar */
-
+.main-body {
+  display: flex; /* Use flexbox for layout */
+  width: 100%;
+  height: 100vh; /* Full height */
+  margin-top: 5%;
 }
 
 .left-plans-description {
-        display: flex;
-        margin-left: 23%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; /* Center align the text */
-        color: white; /* White text color */
-    }
-
-
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  width: 50%; /* Take up the left half of the screen */
+  text-align: center; /* Center align the text */
+  color: white; /* White text color */
+  padding-left: 15%;
+}
 
 .regular-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    height: 25%;
-  }
+  font-size: 1.2rem;
+  line-height: 1.6;
+  height: 15%;
+}
 
 /* Yellow text styles */
 .regular-text-yellow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: space-evenly;
-    font-size: 1.2rem;
-    color: #ffd700; /* Yellow color for text */
-    padding: 10px;
-    border-radius: 5px; /* Rounded corners */
-    line-height: 1.6;
-    margin-bottom: 20%;
-  }
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  margin-top: 1%;
+  font-size: 1.2rem;
+  color: #ffd700; /* Yellow color for text */
+}
 
-  .quote {
-    font-size: 1.5rem;
-    margin-bottom: 10px; /* Space below the quote */
-    font-style: italic;
-    line-height: 1.6; /* Add line spacing */
-  }
+.quote {
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Space below the quote */
+  font-style: italic;
+  line-height: 1.6; /* Add line spacing */
+}
 
-  .left-plans-description h1 {
-    font-size: 4rem; /* Adjust font size as needed */
-    font-weight: bold;
-    font-weight: 200; /* Bold weight */
-    margin-bottom: 20px; /* Space below the heading */
-    font-family: 'Poppins', 'sans-serif' !important; /* Apply the new font */
-    padding: 5%;
+.left-plans-description h1 {
+  font-size: 4rem; /* Adjust font size as needed */
+  font-weight: bold;
+  font-weight: 200; /* Bold weight */
+  margin-bottom: 20px; /* Space below the heading */
+  font-family: "Poppins", "sans-serif" !important; /* Apply the new font */
+}
+
+.right-gym-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 50%; /* Take up the right half of the screen */
+  color: white; /* Match text color */
+  font-size: 4rem; /* Match the size of the heading */
+  justify-content: flex-start;
+  margin-right: 25%;
+  margin: 5%;
+  padding-right: 15%;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(20px); /* Start slightly below */
   }
+  to {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+.cool-btn {
+  background: #f3ff0d;
+  background-image: -webkit-linear-gradient(top, #f3ff0d, #b82b2b);
+  background-image: -moz-linear-gradient(top, #f3ff0d, #b82b2b);
+  background-image: -ms-linear-gradient(top, #f3ff0d, #b82b2b);
+  background-image: -o-linear-gradient(top, #f3ff0d, #b82b2b);
+  background-image: linear-gradient(to bottom, #f3ff0d, #b82b2b);
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+  font-size: 20px;
+  border: solid #1f628d 3px;
+  text-decoration: none;
+
+  /* Set fixed size */
+  width: 100%; /* Fixed width */
+  height: 9%; /* Fixed height */
+  margin-top: 2%;
+
+  /* Center text inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Animation */
+  opacity: 0; /* Start hidden */
+  animation: slideIn 1s ease-in-out forwards; /* 1-second slide-in animation */
+}
+
+.cool-btn:hover {
+  background: #fc3c3c;
+  background-image: -webkit-linear-gradient(top, #fc3c3c, #3439d9);
+  background-image: -moz-linear-gradient(top, #fc3c3c, #3439d9);
+  background-image: -ms-linear-gradient(top, #fc3c3c, #3439d9);
+  background-image: -o-linear-gradient(top, #fc3c3c, #3439d9);
+  background-image: linear-gradient(to bottom, #fc3c3c, #3439d9);
+  text-decoration: none;
+}
+
+.right-gym-description {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; /* Stack buttons and packages vertically */
+  align-items: center; /* Center align content horizontally */
+  width: 50%; /* Adjust as needed for your layout */
+  color: white; /* Match your theme */
+  font-size: 1rem;
+  gap: 20px; /* Add spacing between buttons and packages */
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+  height: 10%;
+}
+
+.gym-packages {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 25%; /* Add some spacing from the buttons */
+  text-align: center; /* Center text in the package section */
+  height:75%;
+  
+}
+
+.gym-packages h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+
+.cool-btn {
+  background: #f3ff0d;
+  background-image: linear-gradient(to bottom, #f3ff0d, #b82b2b);
+  border-radius: 24px;
+  border: 2px solid #1f628d;
+  font-family: "Courier New", monospace;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%; /* Ensure buttons have a consistent size */
+  height: 75%;
+}
+
+.cool-btn:hover {
+  background: #fc3c3c;
+  background-image: linear-gradient(to bottom, #fc3c3c, #3439d9);
+}
+
+.gym-packages button {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 1%; /* Space between package buttons */
+}
+
+.selected-btn {
+  background: #fc3c3c;
+  background-image: linear-gradient(to bottom, #fc3c3c, #3439d9);
+}
