@@ -9,13 +9,16 @@
 
 .left-plans-description {
   display: flex;
+  align-items: flex-start;
   flex-direction: column; /* Stack content vertically */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  width: 50%; /* Take up the left half of the screen */
+  width: 100%; /* Take up the left half of the screen */
   text-align: center; /* Center align the text */
   color: white; /* White text color */
-  padding-left: 15%;
+  margin-left: 25%;
+  margin-top: 0%;
+  height: 100%;
 }
 
 .regular-text {
@@ -51,16 +54,16 @@
 
 .right-gym-description {
   display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 50%; /* Take up the right half of the screen */
-  color: white; /* Match text color */
-  font-size: 4rem; /* Match the size of the heading */
-  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  width: 100%; /* Take up the left half of the screen */
+  text-align: center; /* Center align the text */
+  color: white; /* White text color */
   margin-right: 25%;
-  margin: 5%;
-  padding-right: 15%;
+  margin-top: 2%;
+  height: 100%;
 }
 
 @keyframes slideIn {
@@ -95,7 +98,7 @@
 
   /* Set fixed size */
   width: 100%; /* Fixed width */
-  height: 9%; /* Fixed height */
+  height: 100%; /* Fixed height */
   margin-top: 2%;
 
   /* Center text inside */
@@ -123,7 +126,7 @@
   justify-content: flex-start;
   flex-direction: column; /* Stack buttons and packages vertically */
   align-items: center; /* Center align content horizontally */
-  width: 50%; /* Adjust as needed for your layout */
+  width: 100%; /* Adjust as needed for your layout */
   color: white; /* Match your theme */
   font-size: 1rem;
   gap: 20px; /* Add spacing between buttons and packages */
@@ -132,16 +135,17 @@
 .buttons-section {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  gap: 10px; /* Space between buttons */
-  height: 10%;
+  gap: 5%; /* Space between buttons */
+  height: 15%;
 }
 
 .gym-packages {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  margin-top: 25%; /* Add some spacing from the buttons */
+  margin-top: 15%; /* Add some spacing from the buttons */
   text-align: center; /* Center text in the package section */
-  height:75%;
+  gap: 0%; /* Space between buttons */
+  height:55%;
   
 }
 
@@ -163,7 +167,7 @@
   cursor: pointer;
   text-align: center;
   width: 100%; /* Ensure buttons have a consistent size */
-  height: 75%;
+  height: 70%;
 }
 
 .cool-btn:hover {

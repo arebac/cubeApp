@@ -48,7 +48,6 @@ div{
 .header-right .name {
   font-size: 24px; /* Font size for the name */
   font-weight: bold; /* Bold weight for emphasis */
-  color: white; /* White text for contrast */
   height:30%;
 
 }
@@ -56,12 +55,9 @@ div{
 .header-right .role {
   font-size: 18px; /* Slightly smaller font size for the role */
   font-weight: normal; /* Normal weight for differentiation */
-  color: white; /* Light gray for a subtle effect */
   margin-top: 5%;
   height:30%;
-  margin-left: 0%;
-
-
+  margin-left: 0%
 
 
 }

@@ -3,9 +3,9 @@ import { useState } from "react";
 import "../cssPages/subscriptionpage.css";
 
 const SubscriptionPage = () => {
-  // State to store the selected location
+ 
   const [selectedLocation, setSelectedLocation] = useState(null);
-  const [animationKey, setAnimationKey] = useState(0); // Key to reset animation
+  const [animationKey, setAnimationKey] = useState(0); 
 
   // Data for the gym locations and their plans
   const gymPackages = {
@@ -29,10 +29,10 @@ const SubscriptionPage = () => {
     ],
   };
 
-  // Handler for button click
+
   const handleButtonClick = (location) => {
     setSelectedLocation(location);
-    setAnimationKey((prevKey) => prevKey + 1); // Increment key to restart packages animation
+    setAnimationKey((prevKey) => prevKey+1); // Increment key to restart packages animation
   };
   return (
     <div className="main-body">
@@ -73,6 +73,9 @@ const SubscriptionPage = () => {
       <div className="right-gym-description">
         {/* Gym location buttons */}
         <div className="buttons-section">
+        <div className="regular-text-yellow">
+        Choose a location
+        </div>
           <button
             className={`cool-btn ${
               selectedLocation === "Meca Complex @ Cupey" ? "selected-btn" : ""

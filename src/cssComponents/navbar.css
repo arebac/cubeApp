@@ -1,77 +1,96 @@
-.mainNav{
-    position: absolute;
-    top: 0;
-    background: linear-gradient(90deg, rgba(106,13,173,1) 0%, rgba(0,109,119,1) 100%);
-    width: 100%;
-    height: 8%;
+.mainNav {
+  position: absolute;
+  display: flex;
+  top: 0;
+  /* background: linear-gradient(90deg, rgba(106,13,173,1) 0%, rgba(0,109,119,1) 100%); */
+  background: #34c156;
+  width: 100%;
+  height: 8%;
 }
 
-nav{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-
+nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
 
-ul{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-left: 25%;
-    padding-right: 30%;
-
-  
+.logo-section {
+  display: flex;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column; /* Stack text vertically */
+  line-height: 1.2; /* Adjust line spacing */
+
+  align-content: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  height: 100%; /* Adjust size as needed */
+  margin-left: 10%; /* Space between image and text */
+}
+
+ul {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 35%;
+}
 
 .mainNav ul a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease-in-out; /* Ease-in and ease-out effect for color */
-  }
-  
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Ease-in and ease-out effect for color */
+}
+
 .mainNav ul a:hover {
-    color: #ffd700; /* Highlight color on hover */
-  }
-  
+  color: #ffd700; /* Highlight color on hover */
+}
+
 .mainNav ul a::after {
-    content: "";
-    position: absolute;
-    bottom: -5px; /* Adjust to move underline */
-    left: 2%; /* Start from the center */
-    width: 0;
-    height: 2px; /* Thickness of underline */
-    background-color: #ffd700; /* Underline color */
-    transition: width 0.4s ease-in-out, left 0.4s ease-in-out; /* Smooth animation for both width and position */
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjust to move underline */
+  left: 2%; /* Start from the center */
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: #ffd700; /* Underline color */
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out; /* Smooth animation for both width and position */
 }
 .mainNav ul a:hover::after {
-width: 100%; /* Full underline on hover */
+  width: 100%; /* Full underline on hover */
 }
 
 .mainNav ul a.active::after {
-width: 100%; /* Keeps underline on the active link */
+  width: 100%; /* Keeps underline on the active link */
 }
 
 .mainNav ul .active {
-    color: #ffd700; /* Yellow color for the active link */
-    font-weight: bold; /* Optional: Make it bold */
-  }
+  color: #ffd700; /* Yellow color for the active link */
+  font-weight: bold; /* Optional: Make it bold */
+}
 
-.cube-link span{
-    display:flex;
-    flex-direction: column;
-    text-decoration: none;
-    align-items: flex-start;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    width: 100%;
-    padding-left: 100%;
+.cube-link {
+  margin-top: 0.7%;
+}
 
+.cube-link span {
+  display: flex;
+  font-size: 50px;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
 }

@@ -1,0 +1,14 @@
+.disclaimer-blue-text{
+    color:aqua;
+
+}
+
+.subPage-regular-text-yellow {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 1.2rem;
+    color: #ffd700; /* Yellow color for text */
+    height: 15%;
+  }
