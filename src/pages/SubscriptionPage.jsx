@@ -51,7 +51,7 @@ const SubscriptionPage = () => {
           </span>
           <span>- Tony Robbins</span>
         </span>
-        <div className="regular-text">
+        <div className="regular-text ">
           <span>
             <span>
               A commitment to your body pays
@@ -112,7 +112,7 @@ const SubscriptionPage = () => {
             {" "}
             {/* Unique key for animation reset */}
             {gymPackages[selectedLocation].map((plan, index) => (
-              <div className="buttons-section">
+              <div className="options-buttons-section">
                 <button className="cool-btn" key={index}>
                   {plan}
                 </button>

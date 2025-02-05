@@ -1,14 +1,70 @@
-.disclaimer-blue-text{
-    color:aqua;
+.disclaimer-blue-text {
+  color: aqua;
+}
+
+.dropinPage-left-plans-description {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    width: 100%; /* Take up the left half of the screen */
+    text-align: center; /* Center align the text */
+    color: white; /* White text color */
+    margin-left: 15%;
+    margin-top: 0%;
+    height: 100%;
+}
+
+.dropinPage-regular-text {
+  font-size: 5rem;
+  line-height: 1.6;
+  height: 15%;
+}
+
+.dropinPage-quote {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Space below the quote */
+  font-style: italic;
+  line-height: 1.6; /* Add line spacing */
+}
+
+.dropinPage-left-plans-description h1 {
+  font-size: 3rem; /* Adjust font size as needed */
+  font-weight: bold;
+  font-weight: 200; /* Bold weight */
+  margin-bottom: 2%; /* Space below the heading */
+  font-family: "Poppins", "sans-serif" !important; /* Apply the new font */
+}
+
+.dropinPage-regular-text-yellow {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center;
+  margin-top: 1%;
+  font-size: 1.2rem;
+  color: #ffd700; /* Yellow color for text */
+  height: 15%;
+  margin-bottom: 3%;
+}
+
+.dropinPage-right-gym-description{
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  text-align: center; /* Center align the text */
+  color: white; /* White text color */
+  margin-right: 15%;
+  margin-left: 5%;
+  margin-top: 2%;
 
 }
 
-.subPage-regular-text-yellow {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: center;
-    margin-top: 1%;
-    font-size: 1.2rem;
-    color: #ffd700; /* Yellow color for text */
-    height: 15%;
-  }
+.gym-packages {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 30%; /* Add some spacing from the buttons */
+  text-align: center; /* Center text in the package section */
+  gap: 0%; /* Space between buttons */
+  height: 40%;
+}

@@ -5,7 +5,6 @@ const DropinPage = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [animationKey, setAnimationKey] = useState(0);
   const [remainingDays, setRemainingDays] = useState([]); // Holds dynamically calculated days and dates
-  const [todayFull, setTodayFull] = useState(""); // State to hold the full day and date
 
   useEffect(() => {
     const today = new Date();
@@ -19,7 +18,6 @@ const DropinPage = () => {
       year: "numeric",
     });
 
-    setTodayFull(`${todayDay}, ${todayDate}`); // Combine full day and date
 
     // Dynamically calculate remaining days and dates
     const days = [];
@@ -45,9 +43,9 @@ const DropinPage = () => {
   };
   return (
     <div className="main-body">
-      <div className="left-plans-description">
+      <div className="dropinPage-left-plans-description">
         <h1>Drop In</h1>
-        <span className="quote">
+        <span className="dropinPage-quote">
           <span>
             "The only thing we have to fear is fear <br />
           </span>
@@ -57,7 +55,7 @@ const DropinPage = () => {
           </span>
           <span>- Franklin D. Roosevelt</span>
         </span>
-        <div className="subPage-regular-text-yellow">
+        <div className="dropinPage-regular-text-yellow">
           <span>
             <span>
               There are no active classes to drop into right now. <br />
@@ -75,10 +73,10 @@ const DropinPage = () => {
           </span>
         </div>
       </div>
-      <div className="right-gym-description">
+      <div className="dropinPage-right-gym-description">
         {/* Gym location buttons */}
         <div className="buttons-section">
-          <div className="subPage-regular-text-yellow">Choose a location</div>
+          <div className="dropinPage-regular-text-yellow">Choose a location</div>
           <button
             className={`cool-btn ${
               selectedLocation === "Meca Complex @ Cupey" ? "selected-btn" : ""
@@ -114,7 +112,7 @@ const DropinPage = () => {
           <div key={animationKey} className="gym-packages">
             {/* Unique key for animation reset */}
             {remainingDays.map((day, index) => (
-              <div className="buttons-section" key={index}>
+              <div className="options-buttons-section" key={index}>
                 <button className="cool-btn">{day}</button>
               </div>
             ))}

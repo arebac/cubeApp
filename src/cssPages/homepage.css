@@ -1,3 +1,8 @@
 .name, .role{
     color:white;
 }
+
+.styled-quote{
+    height: 100%;
+    font-size: 3.2rem;
+}
